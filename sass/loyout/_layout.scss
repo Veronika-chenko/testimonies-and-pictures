@@ -8,17 +8,19 @@ html {
     box-sizing: inherit;
 }
 h1 {
-    font-size: 36px;
-    line-height: 1;
-    letter-spacing: 0.03em;
-    margin-bottom: 60px;
-    text-align: center;
+    font-size: 26px;
+    @include tablet {
+        margin-bottom: 30px;
+    }
+    @include desktop {
+        font-size: 28px;
+        line-height: 1;
+        letter-spacing: 0.03em;
+        margin-bottom: 40px;
+    }
 }
 h2 {
     margin-top: 0px;
-}
-h3 {
-    color: #757575;
 }
 img {
     display: block;
